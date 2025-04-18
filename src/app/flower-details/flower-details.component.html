@@ -1,7 +1,15 @@
 @if(flower !== undefined){
   <p>
-    <span class="flower_label">Flower:</span>
+    <span class="flower_label">Name:</span>
     <span class="flower_name">{{flower.label}}</span>
+  </p>
+  <p>
+    <span class="flower_label">Species:</span>
+    <span class="flower_name">{{flower.id}}</span>
+  </p>
+  <p>
+    <span class="flower_label">Born on:</span>
+    <span class="flower_name">{{flower.price}}</span>
   </p>
   <p>
     <img [src]='flower.largeImgSrc' [alt]='flower.label' class='flower_image'>
@@ -15,5 +23,5 @@
   </p>
 }
 <p>
-  <a routerLink="/catalog">Flower Catalog</a>
+  <a routerLink="/catalog">Go Back To Daniel's Pets</a>
 </p>

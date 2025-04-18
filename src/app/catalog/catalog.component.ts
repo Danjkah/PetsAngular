@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {Observable} from "rxjs";
 import {Flower} from "../flower";
 import {FlowerDataService} from "../flower-data.service";
-import {AsyncPipe, CurrencyPipe} from "@angular/common";
+import {AsyncPipe} from "@angular/common";
 import {RouterLink} from "@angular/router";
 
 @Component({
@@ -10,7 +10,6 @@ import {RouterLink} from "@angular/router";
     imports: [
         AsyncPipe,
         RouterLink,
-        CurrencyPipe
     ],
     templateUrl: './catalog.component.html',
     styleUrl: './catalog.component.css'
