@@ -1,0 +1,59 @@
+{
+  "flowers": [
+    {
+      "id": "cat",
+      "label": "Purrsloud",
+      "price": 2016,
+      "description": "Purrsloud loves Wet Food, Dry Food, and basically any food",
+      "picture": {
+        "small": "cat1small.jpg",
+        "large": "cat1large.jpg"
+      },
+      "wiki": "https://en.wikipedia.org/wiki/Aster_(genus)"
+    },
+    {
+      "id": "dog",
+      "label": "Barksalot",
+      "price": 2008,
+      "description": "Barksalot loves Steak, Chicken, and Carrots!",
+      "picture": {
+        "small": "dogsmall1.jpg",
+        "large": "dogsmall1.jpg"
+      },
+      "wiki": "https://en.wikipedia.org/wiki/Dianthus_caryophyllus"
+    },
+    {
+      "id": "cat",
+      "label": "Meowsalot",
+      "price": 2012,
+      "description": "Meowsalot loves Salmon, Green beans, and Sardines!",
+      "picture": {
+        "small": "catsmall2.jpg",
+        "large": "catlarge2.jpg"
+      },
+      "wiki": "https://en.wikipedia.org/wiki/Narcissus_(plant)"
+    },
+    {
+      "id": "lizard",
+      "label": "Lizz",
+      "price": 2005,
+      "description": "Meowsalot loves Crickets, Grasshopper, and Mealworms!",
+      "picture": {
+        "small": "lizardsmall1.jpg",
+        "large": "lizardlarge1.jpg"
+      },
+      "wiki": "https://en.wikipedia.org/wiki/Rose"
+    },
+    {
+      "id": "ape",
+      "label": "King",
+      "price": 2000,
+      "description": "King loves Oranges, Grapes, and Apples!",
+      "picture": {
+        "small": "apesmall1.jpg",
+        "large": "apelarge1.jpg"
+      },
+      "wiki": "https://en.wikipedia.org/wiki/Orchidaceae"
+    }
+  ]
+}

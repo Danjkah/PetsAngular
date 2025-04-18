@@ -1,0 +1,29 @@
+h2 {
+  color: #00bcd4;
+}
+
+td{
+  padding: 6px
+}
+
+table{
+  width: 600px;
+}
+
+span.flower_label{
+  color: #673ab7;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+span.flower_price{
+  font-size: larger;
+  font-weight: bolder;
+  color: #00C853;
+}
+
+img.thumb{
+  margin:8px;
+  border: solid 2px #03a9f4;
+  background: #03a9f4;
+}

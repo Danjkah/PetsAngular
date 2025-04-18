@@ -1,0 +1,19 @@
+@if(flower !== undefined){
+  <p>
+    <span class="flower_label">Flower:</span>
+    <span class="flower_name">{{flower.label}}</span>
+  </p>
+  <p>
+    <img [src]='flower.largeImgSrc' [alt]='flower.label' class='flower_image'>
+  </p>
+  <div class="text_box">
+    {{flower.description}}
+  </div>
+}@else{
+  <p class="message">
+    The data is not found.
+  </p>
+}
+<p>
+  <a routerLink="/catalog">Flower Catalog</a>
+</p>

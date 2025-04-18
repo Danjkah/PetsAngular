@@ -1,0 +1,34 @@
+.flower_label{
+  color: #673ab7;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.flower_name{
+  font-size: larger;
+  font-weight: bolder;
+  color: #ff9800;
+  margin-left: 1em;
+}
+
+
+img.flower_image{
+  background: #03a9f4;
+  box-shadow: 4px 4px 10px #03a9f4;
+  border: solid 2px #03a9f4;
+}
+
+.text_box{
+  width: 300px;
+}
+
+a{
+  color: limegreen;
+  font-weight: bolder;
+}
+
+p.message {
+  font-size: larger;
+  font-weight: bolder;
+  color: crimson;
+}
