@@ -1,0 +1,32 @@
+@if(pet !== undefined){
+  <mat-card class="pet-card">
+    <mat-card-title class="flower_label">Name: <span class="pet_name">{{ pet.label }}</span></mat-card-title>
+    <mat-card-subtitle class="flower_label">Species: <span class="pet_name">{{ pet.id }}</span></mat-card-subtitle>
+    <mat-divider></mat-divider>
+
+    <p>
+      <span class="pet_label">Born on:</span>
+      <span class="pet_name">{{ pet.yearBorn }}</span>
+    </p>
+
+    <img mat-card-image [src]="pet.largeImgSrc" [alt]="pet.label" class="flower_image" />
+
+    <mat-card-content>
+      <div class="text_box">
+        {{ pet.description }}
+      </div>
+    </mat-card-content>
+  </mat-card>
+}@else{
+  <mat-card class="message-card">
+    <mat-card-content class="message">
+      The data is not found.
+    </mat-card-content>
+  </mat-card>
+}
+
+<mat-card class="back-card">
+  <a mat-button color="primary" routerLink="/catalog">
+    ← Go Back To Daniel's Pets
+  </a>
+</mat-card>

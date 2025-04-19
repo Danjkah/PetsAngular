@@ -3,7 +3,7 @@ export interface PictureJson {
   large: string;
 }
 
-export interface FlowerJson {
+export interface PetsJson {
   id: string;
   label: string;
   price: number;
@@ -13,5 +13,5 @@ export interface FlowerJson {
 }
 
 export interface CatalogJson {
-  flowers: FlowerJson[];
+  pets: PetsJson[];
 }

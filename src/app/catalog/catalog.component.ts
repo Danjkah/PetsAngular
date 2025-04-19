@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import {Observable} from "rxjs";
-import {Flower} from "../flower";
-import {FlowerDataService} from "../flower-data.service";
+import {Pet} from "../pet";
+import {PetDataService} from "../pet-data.service";
 import {AsyncPipe} from "@angular/common";
 import {RouterLink} from "@angular/router";
 
 @Component({
-    selector: 'app-flower-index',
+    selector: 'app-pet-index',
     imports: [
         AsyncPipe,
         RouterLink,
@@ -16,9 +16,9 @@ import {RouterLink} from "@angular/router";
 })
 export class CatalogComponent {
 
-  flowers: Observable<Flower[]>;
+  pets: Observable<Pet[]>;
 
-  constructor(flowerDataService: FlowerDataService) {
-    this.flowers = flowerDataService.getAllFlowers();
+  constructor(petDataService: PetDataService) {
+    this.pets = petDataService.getAllPets();
   }
 }

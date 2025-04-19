@@ -1,15 +1,15 @@
 <table>
-  @for(f of (flowers | async); track f.id){
+  @for(f of (pets | async); track f.id){
     <tr>
       <td>
-        <a [routerLink]="['/flowers',f.id]">
+        <a [routerLink]="['/pets',f.id]">
           <img class="thumb"
                [src]="f.smallImgSrc" [alt]="f.label">
         </a>
       </td>
       <td>
-        <span class="flower_label">{{f.label}}</span>&nbsp;&nbsp;
-        <span class="flower_price"> Born in {{f.price}}</span><br>
+        <span class="pet_label">{{f.label}}</span>&nbsp;&nbsp;
+        <span class="pet_born"> Born in {{f.yearBorn}}</span><br>
         {{f.description}}
       </td>
     </tr>

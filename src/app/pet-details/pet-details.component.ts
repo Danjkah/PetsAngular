@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import {Flower} from "../flower";
+import {Pet} from "../pet";
 import {Subscription} from "rxjs";
-import {FlowerDataService} from "../flower-data.service";
+import {PetDataService} from "../pet-data.service";
 import {ActivatedRoute, RouterLink} from "@angular/router";
 import {MatCard, MatCardContent, MatCardImage, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
 import {MatDivider} from "@angular/material/divider";
 import {MatAnchor} from "@angular/material/button";
 
 @Component({
-    selector: 'app-flower-details',
+    selector: 'app-pet-details',
   imports: [
     RouterLink,
     MatCardImage,
@@ -19,25 +19,25 @@ import {MatAnchor} from "@angular/material/button";
     MatCardContent,
     MatAnchor
   ],
-    templateUrl: './flower-details.component.html',
-    styleUrl: './flower-details.component.css'
+    templateUrl: './pet-details.component.html',
+    styleUrl: './pet-details.component.css'
 })
-export class FlowerDetailsComponent {
+export class PetDetailsComponent {
 
-  flower: Flower | undefined;
+  pet: Pet | undefined;
 
-  private flowerSub: Subscription | undefined;
+  private petSub: Subscription | undefined;
 
-  constructor(flowerDataService: FlowerDataService, activatedRoute: ActivatedRoute) {
+  constructor(petDataService: PetDataService, activatedRoute: ActivatedRoute) {
 
     const id: string | null =  activatedRoute.snapshot.paramMap.get('id');
     if(id != null){
-      this.flowerSub =
-        flowerDataService.getFlowerById(id).subscribe(flower => this.flower = flower);
+      this.petSub =
+        petDataService.getPetById(id).subscribe(pet => this.pet = pet);
     }
   }
 
   ngOnDestroy(){
-    this.flowerSub?.unsubscribe();
+    this.petSub?.unsubscribe();
   }
 }

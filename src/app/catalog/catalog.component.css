@@ -21,13 +21,13 @@ td {
   transform: scale(1.15);
 }
 
-.flower_label {
+.pet_label {
   font-size: 1.2rem;
   font-weight: 600;
   color: #222;
 }
 
-.flower_price {
+.pet_born {
   font-style: italic;
   color: #777;
 }
@@ -48,7 +48,7 @@ td:last-child {
     height: 90px;
   }
 
-  .flower_label {
+  .pet_label {
     font-size: 1rem;
   }
 
