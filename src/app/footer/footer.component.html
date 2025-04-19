@@ -1,5 +1,7 @@
-<footer>
-  {{name}}&nbsp;&nbsp;
-  <span class='hart'>&#9825;</span>
-  &nbsp;&nbsp;{{today | date: 'longDate'}}
-</footer>
+<mat-toolbar color="primary" class="footer-toolbar" role="contentinfo">
+  <span class="footer-text">
+    {{ name }}
+    <span class="heart">&hearts;</span>
+    {{ today | date: 'longDate' }}
+  </span>
+</mat-toolbar>
