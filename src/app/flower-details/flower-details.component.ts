@@ -3,12 +3,22 @@ import {Flower} from "../flower";
 import {Subscription} from "rxjs";
 import {FlowerDataService} from "../flower-data.service";
 import {ActivatedRoute, RouterLink} from "@angular/router";
+import {MatCard, MatCardContent, MatCardImage, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
+import {MatDivider} from "@angular/material/divider";
+import {MatAnchor} from "@angular/material/button";
 
 @Component({
     selector: 'app-flower-details',
-    imports: [
-        RouterLink
-    ],
+  imports: [
+    RouterLink,
+    MatCardImage,
+    MatCard,
+    MatCardTitle,
+    MatCardSubtitle,
+    MatDivider,
+    MatCardContent,
+    MatAnchor
+  ],
     templateUrl: './flower-details.component.html',
     styleUrl: './flower-details.component.css'
 })
